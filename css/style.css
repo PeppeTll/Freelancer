@@ -34,7 +34,15 @@
     width: 100%;
 }
 
+.ms_col-count-md-2 {
+    column-count: 1;
+}
 
+@media screen and (min-width: 768px) {
+    .ms_col-count-md-2 {
+        column-count: 2;
+    }
+}
 
 
 
