@@ -1,0 +1,45 @@
+header {
+    background-color: #2C3E50;
+}
+
+.ms_bg_green{
+    background-color: #1ABC9C;
+}
+
+.ms_img_wrapper {
+    width: 170px;
+}
+
+.ms_border {
+    width: 130px;
+    height: 0;
+    border: 1px solid white;
+}
+
+.ms_border_black {
+    width: 130px;
+    height: 0;
+    border: 1px solid;
+}
+
+.star_size {
+    font-size: 30px;
+}
+
+.ms_card_wrapper {
+    width: 400px
+}
+
+.img_card {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.debug [class*="col"] {
+    border: 1px solid ;
+}
