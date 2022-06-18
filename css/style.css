@@ -28,8 +28,8 @@
 
 .ms_card_wrapper {
     position:relative;
-    width: 400px;
     overflow: hidden;
+    max-width: 400px;
 }
 
 .img_card {
@@ -57,18 +57,18 @@
     background: rgba(26, 188, 156, 0.766);
     bottom: 0;
     top: 0;
-    width: 94%;
-    height: 100%;
+    width: 100%;
     transition: .5s ease;
     opacity:1;
     z-index: 1;
 }
 
-@media all and (max-width: 475px) {
+/* @media all and (min-width: 768px) and (max-width: 992px) {
     .overlay {
-        width: 93%;
+        width: 91%;
+        height: 91%;
     }
-}
+} */
 
 .ms_fs-big {
     font-size: 80px;
