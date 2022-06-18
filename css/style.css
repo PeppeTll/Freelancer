@@ -27,7 +27,9 @@
 }
 
 .ms_card_wrapper {
-    width: 400px
+    position:relative;
+    width: 400px;
+    overflow: hidden;
 }
 
 .img_card {
@@ -38,18 +40,43 @@
     column-count: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
     .ms_col-count-md-2 {
         column-count: 2;
     }
 }
 
+
+
 .nav-link:hover {
     color: white !important;
 }
 
+.overlay {
+    position: absolute;
+    background: rgba(26, 188, 156, 0.766);
+    bottom: 0;
+    top: 0;
+    width: 94%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:1;
+    z-index: 1;
+}
 
+@media all and (max-width: 475px) {
+    .overlay {
+        width: 93%;
+    }
+}
 
+.ms_fs-big {
+    font-size: 80px;
+}
+
+.ms_card_wrapper:hover .overlay {
+    opacity: 0;
+}
 
 .debug [class*="col"] {
     border: 1px solid ;
