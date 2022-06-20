@@ -11,25 +11,70 @@
 }
 
 .ms_border {
-    width: 130px;
+    width: 170px;
     height: 0;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 999px;
 }
 
 .ms_border_black {
-    width: 130px;
+    width: 170px;
     height: 0;
-    border: 1px solid;
+    border: 2px solid;
+    border-radius: 999px;
 }
 
-.star_size {
+/* .star-container::before, .star-container::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 170px;
+    border-radius: 999px;
+    background-color: white;
+} */
+
+/* .job-titles li:not(:last-child)::after{
+    content: "-";
+    display: inline;
+    padding: 0, 15px;
+} */
+
+.star_size { 
     font-size: 30px;
 }
 
 .ms_card_wrapper {
+    border-radius: 10px;
     position:relative;
     overflow: hidden;
     max-width: 400px;
+}
+
+.ms_card_wrapper::after {
+    content: "";
+    display: block;
+    background-color: #1abc9c9b;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ms_card_wrapper::after,
+.ms_card_wrapper i {
+    opacity: 0;
+}
+
+.ms_card_wrapper:hover::after,
+.ms_card_wrapper:hover i {
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+.ms_card_wrapper:hover i {
+    z-index: 10;
 }
 
 .img_card {
@@ -50,17 +95,6 @@
 
 .nav-link:hover {
     color: white !important;
-}
-
-.overlay {
-    position: absolute;
-    background: rgba(26, 188, 156, 0.766);
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    transition: .5s ease;
-    opacity:1;
-    z-index: 1;
 }
 
 /* @media all and (min-width: 768px) and (max-width: 992px) {
